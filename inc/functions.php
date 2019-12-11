@@ -1,15 +1,12 @@
 <?php
 function get_item_html($id,$item){
-    $output = '<li>
-                <iframe width="560" height="315" 
-                src="'. $item['video'] . '"
-                frameborder="0" allow="accelerometer; autoplay; 
-                encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen></iframe>
-                <div><a href="details.php?id="' . $id . '">' . $item['title'] . '</div></a>
-                </li>';
+    $output = "<li><a href='details.php?id=" . $id . "'>
+            <p>View Details</p>
+            </a>
+            </li>";
         return $output;
 }
+
 
 function array_category($catalog,$category){
     $output = array();
@@ -26,3 +23,4 @@ function array_category($catalog,$category){
     asort($output);
     return array_keys($output);
 }
+?>
