@@ -12,13 +12,13 @@
 <header>
 <ul class="nav">
   <li class="nav-item">
-    <a class="nav-link active" href="#">"Real" Music</a>
+    <a class="nav-link active" href="catalog.php?cat=regular">"Real" Music</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Video Game Soundtracks</a>
+    <a class="nav-link" href="catalog.php?cat=game">Video Game Soundtracks</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Covers</a>
+    <a class="nav-link" href="catalog.php?cat=cover">Covers</a>
   </li>
 </ul>
 </header>

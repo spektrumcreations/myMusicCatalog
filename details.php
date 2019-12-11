@@ -35,7 +35,7 @@ include("inc/header.php"); ?>
         <table>
             <tr>
                 <th>Category</th>
-                <td><?php echo $item["category"]; ?></td>
+                <td><?php echo ucfirst($item["category"]); ?></td>
             </tr>
             <?php if (strtolower($item["category"]) == "regular"){ ?>
         <tr>

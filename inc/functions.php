@@ -1,7 +1,7 @@
 <?php
 function get_item_html($id,$item){
     $output = "<li><a href='details.php?id=" . $id . "'>
-            <p>View Details</p>
+            <p>".  $item["title"] ."</p>
             </a>
             </li>";
         return $output;

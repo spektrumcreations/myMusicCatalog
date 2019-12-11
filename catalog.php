@@ -7,17 +7,17 @@ $pageTitle = "Full Catalog";
 $section = null;
 
 if (isset($_GET["cat"])){
-    if($_GET["cat"] == "various") {
-        $pageTitle = "Various";
-        $section = "various";
+    if($_GET["cat"] == "regular") {
+        $pageTitle = "Regular music";
+        $section = "regular";
     } else if ($_GET["cat"] == "game")
     {
         $pageTitle = "Video Game Soundtracks";
-        $section = "soundtracks";
+        $section = "game";
     }  else if($_GET["cat"] == "cover") 
     {
         $pageTitle = "Covers";
-        $section = "covers";
+        $section = "cover";
     }
 }
 include("inc/header.php"); ?>
