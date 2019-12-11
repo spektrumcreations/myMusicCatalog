@@ -1,11 +1,15 @@
 <?php
 function get_item_html($id,$item){
-    $output = "<li><a href='details.php?id=" . $id . "'>
-            <p>".  $item["title"] ."</p>
+    $output = "<div class='card' style='width: 18em;'>
+            <div class='card-body'>
+            <h5 class='card-title'>".  $item["title"] ."</h5>
+            <a class='btn btn-primary' href='details.php?id=" . $id . "'> Play
             </a>
-            </li>";
+            </div>
+            </div>";
         return $output;
 }
+
 
 
 function array_category($catalog,$category){

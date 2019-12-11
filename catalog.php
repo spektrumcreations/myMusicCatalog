@@ -28,15 +28,16 @@ include("inc/header.php"); ?>
         echo "<a href='catalog.php'>Full Catalog</a> &gt; ";
     }
     echo $pageTitle; ?></h1>
-
-    <ul class="items">
+    <div>
+    <div class="nonbootitem">
         <?php
         $categories = array_category($catalog,$section);
         foreach($categories as $id) {
             echo get_item_html($id,$catalog[$id]);
         }
         ?>
-        </ul>
+        </div>
+    </div>
 </div>
 
 <?php include("inc/footer.php"); ?>
